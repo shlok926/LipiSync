@@ -44,6 +44,11 @@
 - [⚡ Quick Start](#-quick-start)
 - [⌨️ Keyboard Shortcuts](#-keyboard-shortcuts)
 - [📂 Project Structure](#-project-structure)
+- [🛡️ Security Disclaimer](#-security-disclaimer)
+- [🌱 Future Scope](#-future-scope)
+- [🤝 Contributing & Feedback](#-contributing--feedback)
+- [⭐ Show Your Support](#-show-your-support)
+- [👤 Author & Contact](#-author--contact)
 - [📄 License](#-license)
 
 ---
@@ -124,5 +129,42 @@ LipiSync/
 ### 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+### 🛡️ Security Disclaimer
+
+LipiSync does not upload or transmit any of your files, local conversion histories, or audio exports. All translations, logs, and persistent settings are stored entirely offline in your system's configuration directories.
+
+---
+
+### 🌱 Future Scope
+
+- **Contracted Braille (Grade 2):** Expand English UEB translation support with full contraction dictionaries.
+- **Offline Neural OCR:** Integrate custom lightweight neural models to detect and transcribe distorted or low-resolution Braille pages.
+- **Cross-Platform Deployments:** Build native installation scripts for macOS and Linux operating systems.
+
+---
+
+### 🤝 Contributing & Feedback
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. 
+
+Feel free to fork the repository, open a pull request, or report bugs in the Issues section.
+
+---
+
+### ⭐ Show Your Support
+
+If LipiSync has helped you translate, study, or teach Braille, please consider giving this project a ⭐ on GitHub! Your support helps make the project more visible and encourages ongoing development.
+
+---
+
+### 👤 Author & Contact
+
+Developed and Maintained by **Shlok Thorat** ([@shlok926](https://github.com/shlok926))
+
+*   **Email:** shlokthorat9@gmail.com
+*   **GitHub Issues:** [Open a Support Ticket](https://github.com/shlok926/LipiSync/issues)
 
 *© 2026 LipiSync Team. Designed with accessibility in mind.*
