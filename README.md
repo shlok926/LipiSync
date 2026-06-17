@@ -79,21 +79,32 @@ Visually impaired users, students, and educators face significant barriers when 
 
 ### ⚡ Quick Start
 
-#### 1. Clone the repository
+#### 📥 Installation (For General Users)
+If you just want to run LipiSync on Windows without setting up Python:
+1. Go to the [Releases](https://github.com/shlok926/LipiSync/releases) page.
+2. Download the latest **`LipiSync_Setup.exe`**.
+3. Double-click the downloaded setup file and follow the on-screen installer instructions.
+4. Launch LipiSync instantly via the desktop shortcut!
+
+#### 🛠️ Developer Setup
+If you want to run the project from source code:
+
+##### 1. Clone the repository
 ```bash
 git clone https://github.com/shlok926/LipiSync.git
 cd LipiSync
 ```
 
-#### 2. Install dependencies
+##### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-#### 3. Launch the application
+##### 3. Launch the application
 ```bash
 python main.py
 ```
+
 
 ---
 
