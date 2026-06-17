@@ -16,7 +16,7 @@ Settings include:
 import json
 import os
 from pathlib import Path
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, Tuple
 
 
 class SettingsManager:
@@ -318,7 +318,6 @@ def get_all_settings() -> Dict[str, Any]:
 
 
 # Type hints
-from typing import Tuple
 
 
 if __name__ == "__main__":
