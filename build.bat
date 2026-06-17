@@ -1,6 +1,5 @@
 @echo off
-REM Build script for Braille Converter .exe
-REM This script creates a standalone Windows executable
+setlocal enabledelayedexpansion
 
 echo.
 echo ╔════════════════════════════════════════════════════════════╗
@@ -31,8 +30,28 @@ if errorlevel 1 (
 )
 
 echo.
-echo 🎨 Building Braille Converter .exe...
-echo   (This may take 1-2 minutes)
+echo 🔧 Choose Build Mode:
+echo ═════════════════════════════
+echo [1] Directory Mode (RECOMMENDED - Opens Instantly ^< 2 sec)
+echo     Creates a 'dist/BrailleConverter' folder containing the app.
+echo     Faster startup, no antivirus delay, best for daily use.
+echo.
+echo [2] Single File Mode (Slower Startup, but portable)
+echo     Creates a single 'dist/BrailleConverter.exe' file.
+echo     Takes 20-30 seconds to open on first start because it extracts 470MB of libraries.
+echo     (UPX compression is disabled to make it as fast as possible).
+echo.
+set /p choice="Enter choice (1 or 2, default is 1): "
+
+if "%choice%"=="2" (
+    set BUILD_MODE=onefile
+    echo.
+    echo 🎨 Building in Single File Mode (onefile)...
+) else (
+    set BUILD_MODE=onedir
+    echo.
+    echo 🎨 Building in Directory Mode (onedir)...
+)
 echo.
 
 REM Build using spec file
@@ -48,14 +67,11 @@ echo.
 echo ✨ Build completed successfully!
 echo.
 echo 📍 Output location:
-echo    dist\BrailleConverter.exe
-echo.
-echo 🎯 Next steps:
-echo    1. Test: Run dist\BrailleConverter.exe
-echo    2. Create installer: (Optional - use InnoSetup or WiX)
-echo    3. Deploy: Share the .exe with users
-echo.
-echo 📊 Build statistics:
-dir dist\BrailleConverter.exe | find "BrailleConverter.exe"
+if "%BUILD_MODE%"=="onefile" (
+    echo    dist\BrailleConverter.exe
+) else (
+    echo    dist\BrailleConverter\ (Run BrailleConverter.exe inside this folder)
+)
 echo.
 pause
+
