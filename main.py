@@ -20,6 +20,11 @@ def main():
     app.setStyle("Fusion")
     app.setApplicationName("LipiSync")
     app.setApplicationVersion("2.0.0")
+    
+    icon_path = os.path.join(os.path.dirname(__file__), "braille_logo.png")
+    if os.path.exists(icon_path):
+        app.setWindowIcon(QIcon(icon_path))
+        
     window = MainWindow()
     window.show()
     sys.exit(app.exec())
